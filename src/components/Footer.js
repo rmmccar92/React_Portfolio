@@ -2,15 +2,19 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="page-footer py-5 text-center">
-      <section class="contact mx-auto">
+    <footer className="page-footer py-5 text-center">
+      <section className="contact mx-auto">
         <h2>Contact</h2>
-        <ul class="footer-links">
+        <ul className="footer-links">
           <li>Email: rmmccar92@gmail.com</li>
           <li>
             Github:{" "}
-            <a href="https://github.com/rmmccar92" target="_blank">
-              <i class="fab fa-github"></i>
+            <a
+              href="https://github.com/rmmccar92"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github"></i>
             </a>
           </li>
           <li>
@@ -18,16 +22,16 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/ryan-mccarthy-20950291/"
               target="_blank"
+              rel="noreferrer"
             >
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
+          </li>
+          <li>
+            <p> &copy;2021</p>
           </li>
         </ul>
       </section>
-      <p class="float-end">
-        <a href="#">Back to top</a>
-      </p>
-      <p>&copy;2021</p>
     </footer>
   );
 };

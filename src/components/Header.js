@@ -1,20 +1,30 @@
 import React from "react";
+import portrait from "../images/me.jpg";
 
 const Header = () => {
   return (
-    <div class="img-box">
-      <section class="site-head">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h1 class="name">Ryan McCarthy</h1>
-              <p class="subtitle">Full Stack Development Portfolio</p>
+    <div className="img-box">
+      <section className="site-head">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 className="name">Ryan McCarthy</h1>
+              <p className="subtitle">Full Stack Development Portfolio</p>
+            </div>
+            <div className="float-left">
+              <img
+                src={portrait}
+                className="portrait rounded-circle"
+                width="300"
+                height="375"
+                alt="Ryan McCarthy"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <div class="hero"></div>
+      <div className="hero"></div>
     </div>
   );
 };

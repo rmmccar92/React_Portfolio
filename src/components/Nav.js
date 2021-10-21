@@ -1,15 +1,21 @@
 import React from "react";
 
-const Nav = () => {
+const Nav = ({ currentPage, handlePageChange }) => {
   return (
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div className="container-fluid">
+          <a
+            href="#Home"
+            onClick={() => handlePageChange("Home")}
+            className={
+              currentPage === "Home" ? "navbar-brand active" : "navbar-brand"
+            }
+          >
             RMM
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
@@ -17,26 +23,53 @@ const Nav = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#work">
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <ul className="navbar-nav me-auto mb-2 mb-md-0">
+              <li className="nav-item">
+                <a
+                  href="#Work"
+                  onClick={() => handlePageChange("Work")}
+                  className={
+                    currentPage === "Work" ? "nav-link active" : "nav-link"
+                  }
+                >
+                  {" "}
                   Work
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#about-me">
+              <li className="nav-item">
+                <a
+                  href="#About"
+                  onClick={() => handlePageChange("About")}
+                  className={
+                    currentPage === "About" ? "nav-link active" : "nav-link"
+                  }
+                >
                   About Me
                 </a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
-                  class="nav-link active"
-                  href="./assets/images/McCarthy Resume.docx.pdf"
+                  href="#Resume"
+                  onClick={() => handlePageChange("Resume")}
+                  className={
+                    currentPage === "Resume" ? "nav-link active" : "nav-link"
+                  }
                 >
                   Resume
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#Contact"
+                  onClick={() => handlePageChange("Contact")}
+                  className={
+                    currentPage === "Contact" ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Contact
                 </a>
               </li>
             </ul>

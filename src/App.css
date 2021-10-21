@@ -1,49 +1,16 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* Start Custom CSS */
-body {
+#root {
   background-color: rgb(37, 37, 37);
   color: white;
 }
 
 ul {
   list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-toggler-icon {
@@ -64,14 +31,14 @@ ul {
 }
 
 .name {
-  font-size: 3.75em;
+  font-size: 3.5em;
   color: white;
   margin: 0;
   padding: 0;
 }
 
 .subtitle {
-  font-size: 5em;
+  font-size: 4em;
   color: rgb(189, 187, 187);
   display: none;
 }
@@ -105,6 +72,7 @@ footer li {
 
 footer {
   background-color: black;
+  color: gray;
 }
 
 @media (min-width: 1200px) {
