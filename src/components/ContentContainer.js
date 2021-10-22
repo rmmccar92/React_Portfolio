@@ -31,7 +31,11 @@ const ContentContainer = () => {
     <>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       <Header />
-      {renderPage()}
+      <div class="container" id="work">
+        <h1 class="text-center m-1">My Work</h1>
+        <hr class="featurette-divider" />
+        {renderPage()}
+      </div>
       <Footer />
     </>
   );
