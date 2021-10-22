@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="page-footer py-5 text-center">
+    <footer className="page-footer py-5 text-center mx-auto">
       <section className="contact mx-auto">
-        <h2>Contact</h2>
+        <h2>Find Me Here</h2>
         <ul className="footer-links">
           <li>Email: rmmccar92@gmail.com</li>
           <li>

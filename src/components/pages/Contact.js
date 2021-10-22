@@ -35,40 +35,48 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="username"
-        />
-        <div className="form-group">
-          <label for="message">Message</label>
-          <textarea
-            onChange={handleInputChange}
-            className="form-control"
-            id="message"
-            rows="3"
-          ></textarea>
-        </div>
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+    <div className="container-" id="contact-form">
+      <h1 className="text-center m-3">Contact</h1>
+      <hr className="featurette-divider" />
+      <div>
+        <form className="form">
+          <div className="smallFields">
+            <input
+              value={email}
+              className="emailForm"
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="email"
+            />
+            <input
+              value={name}
+              className="nameForm"
+              name="name"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="name"
+            />
+          </div>
+          <div className="form-group">
+            <label for="message">Message</label>
+            <textarea
+              onChange={handleInputChange}
+              className="form-control"
+              id="message"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
+        </form>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

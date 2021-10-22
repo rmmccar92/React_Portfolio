@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../images/McCarthy Resume.docx.pdf";
 
 const Nav = ({ currentPage, handlePageChange }) => {
   return (
@@ -52,7 +53,7 @@ const Nav = ({ currentPage, handlePageChange }) => {
               </li>
               <li className="nav-item">
                 <a
-                  href="#Resume"
+                  href={resume}
                   onClick={() => handlePageChange("Resume")}
                   className={
                     currentPage === "Resume" ? "nav-link active" : "nav-link"
