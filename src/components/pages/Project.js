@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/fmsearchimg2.png";
+import image from "../../images/fmsearchimg2.png";
 
 const Project = () => {
   return (

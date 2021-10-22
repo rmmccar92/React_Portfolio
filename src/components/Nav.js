@@ -30,9 +30,9 @@ const Nav = ({ currentPage, handlePageChange }) => {
               <li className="nav-item">
                 <a
                   href="#Work"
-                  onClick={() => handlePageChange("Work")}
+                  onClick={() => handlePageChange("Project")}
                   className={
-                    currentPage === "Work" ? "nav-link active" : "nav-link"
+                    currentPage === "Project" ? "nav-link active" : "nav-link"
                   }
                 >
                   {" "}
