@@ -1,6 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Form from "react-bootstrap/Form";
+import { validateEmail } from "../../utils/helpers";
+import { gsap } from "gsap";
 
 const Contact = () => {
+  //   const fade = useEffect(() => {
+  //     gsap.from("error-text", { opactiy: 0, duration: 1.5 });
+  //   });
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -10,11 +16,9 @@ const Contact = () => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
-
-    // Based on the input type, we set the state of either email, username, and password
     if (inputType === "email") {
       setEmail(inputValue);
-    } else if (inputType === "Name") {
+    } else if (inputType === "name") {
       setName(inputValue);
     } else {
       setMessage(inputValue);
@@ -24,8 +28,8 @@ const Contact = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !name || !message) {
-      setErrorMessage("Email or name is invalid");
+    if (!validateEmail(email) || !name || !message) {
+      setErrorMessage("Invalid submission");
       return;
     }
 
@@ -35,44 +39,66 @@ const Contact = () => {
   };
 
   return (
-    <div className="container-" id="contact-form">
-      <h1 className="text-center m-3">Contact</h1>
+    <div className="container" id="contact-form">
+      <h1 className="text-center m-3 title">Contact</h1>
       <hr className="featurette-divider" />
       <div>
-        <form className="form">
-          <div className="smallFields">
-            <input
-              value={email}
-              className="emailForm"
-              name="email"
-              onChange={handleInputChange}
-              type="email"
-              placeholder="email"
-            />
-            <input
+        <Form
+          action="https://formspree.io/f/mwkazejb"
+          method="POST"
+          id="contactForm"
+        >
+          <Form.Group>
+            <Form.Label htmlFor="name">Name</Form.Label>
+            <Form.Control
               value={name}
-              className="nameForm"
-              name="name"
+              className="inputGroup"
               onChange={handleInputChange}
               type="text"
-              placeholder="name"
+              name="name"
+              placeholder="Name"
             />
-          </div>
-          <div className="form-group">
-            <label for="message">Message</label>
-            <textarea
+          </Form.Group>
+          <Form.Group>
+            <Form.Label htmlFor="emailAddress">Email</Form.Label>
+            <Form.Control
+              value={email}
+              className="inputGroup"
               onChange={handleInputChange}
-              className="form-control"
+              id="emailAddress"
+              name="email"
+              type="email"
+              placeholder="Email"
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label htmlFor="message">Message</Form.Label>
+            <Form.Control
+              value={message}
+              className="inputGroup"
+              onChange={handleInputChange}
               id="message"
-              rows="3"
-            ></textarea>
+              type="text"
+              placeholder="Message"
+              name="message"
+              as="textarea"
+              rows="5"
+            />
+          </Form.Group>
+          <div className="d-grid">
+            <button
+              id="btn-primary"
+              onClick={handleFormSubmit}
+              className="btn-light btn mt-1"
+              type="submit"
+              name="action"
+            >
+              Submit
+            </button>
           </div>
-          <button type="button" onClick={handleFormSubmit}>
-            Submit
-          </button>
-        </form>
+        </Form>
         {errorMessage && (
-          <div>
+          <div className="text-danger mt-2">
             <p className="error-text">{errorMessage}</p>
           </div>
         )}

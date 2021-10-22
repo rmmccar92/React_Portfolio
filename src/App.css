@@ -117,6 +117,10 @@ footer {
   height: 20em;
 }
 
+.error-text {
+  text-align: center;
+}
+
 @media (min-width: 1200px) {
   .site-head {
     top: 6em;
