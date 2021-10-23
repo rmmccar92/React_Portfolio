@@ -16,13 +16,13 @@ Ryan McCarthy
 
 ## Links
 
-- [Live app Link]()
+- [Live app Link](https://rmmccar92.github.io/React_Portfolio/)
 
 - [Repo Link](https://github.com/rmmccar92/React_Portfolio)
 
 ## Demo
 
-![Portfolio Demo](https://rmmccar92.github.io/React_Portfolio/)
+![Portfolio Demo](https://github.com/rmmccar92/React_Portfolio/blob/main/public/assets/Portfolio_demo.gif)
 
 ## Questions
 
