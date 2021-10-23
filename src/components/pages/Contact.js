@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Form from "react-bootstrap/Form";
 import { validateEmail } from "../../utils/helpers";
 import { gsap } from "gsap";
 
 const Contact = () => {
-  //   const fade = useEffect(() => {
-  //     gsap.from("error-text", { opactiy: 0, duration: 1.5 });
-  //   });
+  const formRef = useRef();
+  const q = gsap.utils.selector(formRef);
+  useEffect(() => {
+    gsap.from(q(".inputGroup"), { opacity: 0, duration: 0.5, x: -100 });
+    gsap.from(q("button"), { opacity: 0, duration: 0.5, x: -100 });
+    gsap.from(q("label"), { opacity: 0, duration: 0.5, x: -100 });
+  }, []);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -47,6 +51,7 @@ const Contact = () => {
           action="https://formspree.io/f/mwkazejb"
           method="POST"
           id="contactForm"
+          ref={formRef}
         >
           <Form.Group>
             <Form.Label htmlFor="name">Name</Form.Label>
