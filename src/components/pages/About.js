@@ -14,8 +14,8 @@ const About = () => {
       <div class="about-me-head" id="about-me">
         <h1 class="text-center m-4">About Me</h1>
         <div class="row featurette am-feature">
-          <div class="col-lg-9 bio">
-            <p class="lead">
+          <div class="col-lg-9 bio m-3 p-3">
+            <p class="lead m-5">
               Welcome to my Portfolio. I have always found myself drawn to the
               ability to create. Whether that's a digital or physical project
               there's a certain amount of craftsmanship that can be appreciated.

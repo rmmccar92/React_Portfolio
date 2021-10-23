@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
 
+document.body.style.backgroundColor = "black";
+
 const ContentContainer = () => {
   const [currentPage, setCurrentPage] = useState("Home");
 
@@ -33,7 +35,7 @@ const ContentContainer = () => {
   return (
     <>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <div>{renderPage()}</div>
       <Footer />
     </>
   );
