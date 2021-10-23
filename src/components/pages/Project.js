@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import FMImage from "../../images/fmsearchimg2.png";
 import WDImage from "../../images/Dashboard1.JPG";
 import CGImage from "../../images/CGImage.png";
 import CQImage from "../../images/CQwide.JPG";
 import WDPImage from "../../images/WDP2.JPG";
+import { gsap } from "gsap";
 
 const Project = () => {
+  const elRef = useRef();
+  const q = gsap.utils.selector(elRef);
+  useEffect(() => {
+    gsap.from(q(".row"), { opacity: 0, duration: 1, x: -100 });
+  });
   return (
     <>
-      <div className="container" id="work">
+      <div className="container" id="work" ref={elRef}>
         <h1 className="text-center m-1">My Work</h1>
         <hr className="featurette-divider" />
         <div className="row featurette">

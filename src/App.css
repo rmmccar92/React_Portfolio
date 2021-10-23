@@ -4,12 +4,23 @@
   color: white;
 }
 
+li {
+  color: white;
+  text-decoration: none;
+}
+
 header {
   padding: 2em;
 }
 
+.tech-list {
+  color: white;
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -95,8 +106,9 @@ ul {
   margin-right: 1em;
 }
 
-a {
-  text-decoration: none;
+.mongo-logo {
+  aspect-ratio: 4/3;
+  width: 2.25em;
 }
 
 footer li {

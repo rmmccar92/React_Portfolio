@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import portrait from "../../images/me.jpg";
+import { gsap } from "gsap";
 
 const About = () => {
+  const elRef = useRef();
+  const q = gsap.utils.selector(elRef);
+  useEffect(() => {
+    gsap.from(q(".row"), { opacity: 0, duration: 1, x: -100 });
+  });
   return (
-    <div className="container">
+    <div className="container" ref={elRef}>
       <hr className="featurette-divider" />
       <div class="about-me-head" id="about-me">
         <h1 class="text-center m-4">About Me</h1>

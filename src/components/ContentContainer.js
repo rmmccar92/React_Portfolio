@@ -5,6 +5,7 @@ import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Resume from "./pages/Resume";
 
 const ContentContainer = () => {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -21,6 +22,9 @@ const ContentContainer = () => {
     }
     if (currentPage === "Project") {
       return <Project />;
+    }
+    if (currentPage === "Resume") {
+      return <Resume />;
     }
   };
 

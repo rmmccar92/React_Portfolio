@@ -7,7 +7,9 @@ const Home = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <h1 className="name">Ryan McCarthy</h1>
+              <h1 className="name">
+                Ryan M<sup>c</sup>Carthy
+              </h1>
               <p className="subtitle">Full Stack Development Portfolio</p>
             </div>
           </div>
