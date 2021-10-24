@@ -28,6 +28,16 @@ const Footer = () => {
             </a>
           </li>
           <li>
+            Stack OverFlow:{" "}
+            <a
+              href="https://stackoverflow.com/users/15835128/ryan-mccarthy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+          <li>
             <p> &copy;2021</p>
           </li>
         </ul>

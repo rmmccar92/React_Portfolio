@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Project from "./pages/Project";
@@ -10,6 +10,9 @@ import Resume from "./pages/Resume";
 document.body.style.backgroundColor = "black";
 
 const ContentContainer = () => {
+  useEffect(() => {
+    document.title = "Ryan McCarthy Portfolio";
+  }, []);
   const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
