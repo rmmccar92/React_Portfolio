@@ -4,6 +4,7 @@ import WDImage from "../../images/Dashboard1.JPG";
 import CGImage from "../../images/CGImage.png";
 import CQImage from "../../images/CQwide.JPG";
 import WDPImage from "../../images/WDP2.JPG";
+import podcastLogo from "../../images/podcast-logo.png";
 import { gsap } from "gsap";
 
 const Project = () => {
@@ -34,6 +35,7 @@ const Project = () => {
               An application designed to recommend and provide information about
               video games.
             </p>
+            <div className="technologies"></div>
           </div>
           <div className="col-md-5">
             <a
@@ -114,30 +116,46 @@ const Project = () => {
         <div className="row featurette">
           <div className="col-md-7">
             <h2 className="featurette-heading">
-              Project 3. <span className="text-muted">???.</span>
+              Project 3.
+              <a
+                href="https://pod-central.herokuapp.com/"
+                target="_blank"
+                className="pc-link"
+                rel="noreferrer"
+              >
+                <span className="text-muted">PodCentral</span>
+              </a>
             </h2>
-            <p className="lead">Coming Soon!</p>
+
+            <p className="lead">
+              PodCentral is a full stack web application that allows users to
+              browse their favorite podcasts and to create a podcast of their
+              own and upload episodes
+            </p>
           </div>
           <div className="col-md-5">
-            <svg
-              className="
+            <a
+              href="https://pod-central.herokuapp.com/"
+              target="_blank"
+              className="fms-link"
+              rel="noreferrer"
+            >
+              <img
+                className="
                 bd-placeholder-img bd-placeholder-img-lg
                 featurette-image
                 img-fluid
                 mx-auto
               "
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                500x500
-              </text>
-            </svg>
+                alt="PodCentral"
+                width="300"
+                height="250"
+                src={podcastLogo}
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <title>PodCentral</title>
+            </a>
           </div>
         </div>
 
