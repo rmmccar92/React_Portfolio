@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React_Portfolio/static/css/main.17239cbb.chunk.css",
-    "main.js": "/React_Portfolio/static/js/main.17cbfb6b.chunk.js",
-    "main.js.map": "/React_Portfolio/static/js/main.17cbfb6b.chunk.js.map",
+    "main.js": "/React_Portfolio/static/js/main.6af2f056.chunk.js",
+    "main.js.map": "/React_Portfolio/static/js/main.6af2f056.chunk.js.map",
     "runtime-main.js": "/React_Portfolio/static/js/runtime-main.89dc9395.js",
     "runtime-main.js.map": "/React_Portfolio/static/js/runtime-main.89dc9395.js.map",
     "static/css/2.4b9fa4af.chunk.css": "/React_Portfolio/static/css/2.4b9fa4af.chunk.css",
@@ -20,13 +20,14 @@
     "static/media/all.css": "/React_Portfolio/static/media/fa-solid-900.eeccf4f6.woff",
     "static/media/fmsearchimg2.5a78f7fb.png": "/React_Portfolio/static/media/fmsearchimg2.5a78f7fb.png",
     "static/media/me.6d3de822.jpg": "/React_Portfolio/static/media/me.6d3de822.jpg",
-    "static/media/mongo.db6a696b.png": "/React_Portfolio/static/media/mongo.db6a696b.png"
+    "static/media/mongo.db6a696b.png": "/React_Portfolio/static/media/mongo.db6a696b.png",
+    "static/media/podcast-logo.2815e2aa.png": "/React_Portfolio/static/media/podcast-logo.2815e2aa.png"
   },
   "entrypoints": [
     "static/js/runtime-main.89dc9395.js",
     "static/css/2.4b9fa4af.chunk.css",
     "static/js/2.dfcf43b4.chunk.js",
     "static/css/main.17239cbb.chunk.css",
-    "static/js/main.17cbfb6b.chunk.js"
+    "static/js/main.6af2f056.chunk.js"
   ]
 }
