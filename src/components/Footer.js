@@ -34,7 +34,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-stack-overflow"></i>
+              <i className="fab fa-stack-overflow"></i>
             </a>
           </li>
           <li>

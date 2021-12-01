@@ -6,6 +6,7 @@ import CQImage from "../../images/CQwide.JPG";
 import WDPImage from "../../images/WDP2.JPG";
 import podcastLogo from "../../images/podcast-logo.png";
 import { gsap } from "gsap";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Project = () => {
   const elRef = useRef();
@@ -35,6 +36,33 @@ const Project = () => {
               An application designed to recommend and provide information about
               video games.
             </p>
+            <a
+              href="https://github.com/rmmccar92/Confused-Gamer"
+              className="github-icon"
+            >
+              <GitHubIcon />
+            </a>
+            <div className="technologies">
+              <div className="tech-icons">
+                <div className="Js">
+                  <i className="fab fa-js-square"></i>
+                </div>
+                <div className="html">
+                  <i className="fab fa-html5"></i>
+                </div>
+                <div className="css">
+                  <i className="fab fa-css3-alt"></i>
+                </div>
+                <div className="logo-box">
+                  <img
+                    className="material-logo"
+                    src="https://seeklogo.com/images/M/materialize-logo-0FCAD8A6F8-seeklogo.com.png"
+                    alt="materialize logo"
+                  />
+                </div>
+              </div>
+            </div>
+
             <div className="technologies"></div>
           </div>
           <div className="col-md-5">
@@ -84,6 +112,45 @@ const Project = () => {
               to congregate and provide information about nearby farmer's
               markets.
             </p>
+            <a
+              href="https://github.com/rmmccar92/Farmers-Market-Search"
+              className="github-icon"
+            >
+              <GitHubIcon />
+            </a>
+            <div className="technologies">
+              <div className="tech-icons">
+                <div className="Js">
+                  <i className="fab fa-js-square"></i>
+                </div>
+                <div className="html">
+                  <i className="fab fa-html5"></i>
+                </div>
+                <div className="css">
+                  <i className="fab fa-css3-alt"></i>
+                </div>
+                <div className="node">
+                  <i className="fab fa-node-js"></i>
+                </div>
+                <div className="bootstrap">
+                  <i className="fab fa-bootstrap"></i>
+                </div>
+                <div className="logo-box">
+                  <img
+                    className="mysql-logo"
+                    src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg"
+                    alt="MySQL Logo"
+                  />
+                </div>
+                <div className="logo-box">
+                  <img
+                    className="gsap-logo"
+                    src="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg"
+                    alt="gsap Logo"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="col-md-5 order-md-1">
             <a
@@ -132,6 +199,52 @@ const Project = () => {
               browse their favorite podcasts and to create a podcast of their
               own and upload episodes
             </p>
+            <a
+              href="https://github.com/rmmccar92/PodCentral"
+              className="github-icon"
+            >
+              <GitHubIcon />
+            </a>
+            <div className="technologies">
+              <div className="tech-icons">
+                <div className="Js">
+                  <i className="fab fa-js-square"></i>
+                </div>
+                <div className="html">
+                  <i className="fab fa-html5"></i>
+                </div>
+                <div className="css">
+                  <i className="fab fa-css3-alt"></i>
+                </div>
+                <div className="node">
+                  <i className="fab fa-node-js"></i>
+                </div>
+                <div className="React">
+                  <i className="fab fa-react"></i>
+                </div>
+                <div className="logo-box">
+                  <img
+                    className="gql-logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/512px-GraphQL_Logo.svg.png"
+                    alt="GraphQL Logo"
+                  />
+                </div>
+                <div className="logo-box">
+                  <img
+                    className="mui-logo"
+                    src="https://cdn.worldvectorlogo.com/logos/material-ui.svg"
+                    alt="Material UI logo"
+                  />
+                </div>
+                <div className="logo-box">
+                  <img
+                    className="mongo-logo"
+                    src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
+                    alt="Mongo DB logo"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="col-md-5">
             <a

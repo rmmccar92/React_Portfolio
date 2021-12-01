@@ -11,11 +11,11 @@ const About = () => {
   return (
     <div className="container" ref={elRef}>
       <hr className="featurette-divider" />
-      <div class="about-me-head" id="about-me">
-        <h1 class="text-center m-4">About Me</h1>
-        <div class="row featurette am-feature">
-          <div class="col-lg-9 bio m-3 p-3">
-            <p class="lead m-5">
+      <div className="about-me-head" id="about-me">
+        <h1 className="text-center m-4">About Me</h1>
+        <div className="row featurette am-feature">
+          <div className="col-lg-9 bio m-3 p-3">
+            <p className="lead m-5">
               Welcome to my Portfolio. I have always found myself drawn to the
               ability to create. Whether that's a digital or physical project
               there's a certain amount of craftsmanship that can be appreciated.
