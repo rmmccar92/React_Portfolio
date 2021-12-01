@@ -43,6 +43,7 @@ const Project = () => {
               <GitHubIcon />
             </a>
             <div className="technologies">
+              <h6 className="text-center">Project Technologies:</h6>
               <div className="tech-icons">
                 <div className="Js">
                   <i className="fab fa-js-square"></i>
@@ -62,8 +63,6 @@ const Project = () => {
                 </div>
               </div>
             </div>
-
-            <div className="technologies"></div>
           </div>
           <div className="col-md-5">
             <a
@@ -119,6 +118,7 @@ const Project = () => {
               <GitHubIcon />
             </a>
             <div className="technologies">
+              <h6 className="text-center">Project Technologies:</h6>
               <div className="tech-icons">
                 <div className="Js">
                   <i className="fab fa-js-square"></i>
@@ -206,6 +206,8 @@ const Project = () => {
               <GitHubIcon />
             </a>
             <div className="technologies">
+              <h6 className="text-center">Project Technologies:</h6>
+
               <div className="tech-icons">
                 <div className="Js">
                   <i className="fab fa-js-square"></i>

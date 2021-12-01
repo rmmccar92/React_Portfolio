@@ -2,14 +2,15 @@ import React, { useState, useEffect, useRef } from "react";
 import Form from "react-bootstrap/Form";
 import { validateEmail } from "../../utils/helpers";
 import { gsap } from "gsap";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const formRef = useRef();
-  const q = gsap.utils.selector(formRef);
+
   useEffect(() => {
-    gsap.from(q(".inputGroup"), { opacity: 0, duration: 0.5, x: -100 });
-    gsap.from(q("button"), { opacity: 0, duration: 0.5, x: -100 });
-    gsap.from(q("label"), { opacity: 0, duration: 0.5, x: -100 });
+    gsap.from(".inputGroup", { opacity: 0, duration: 0.5, x: -100 });
+    gsap.from("button", { opacity: 0, duration: 0.5, x: -100 });
+    gsap.from("label", { opacity: 0, duration: 0.5, x: -100 });
   }, []);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -29,13 +30,26 @@ const Contact = () => {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     if (!validateEmail(email) || !name || !message) {
       setErrorMessage("Invalid submission");
       return;
     }
+    const serviceId = "service_3oukn1q";
+    const templateId = "template_5jwiz6m";
+    const userId = "user_7wTqyhOq9QPQ2coZfDyp9";
+    const templateParams = {
+      name,
+      email,
+      message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, userId)
+      .then((response) => console.log(response))
+      .then((error) => console.log(error));
 
     setName("");
     setMessage("");
@@ -48,10 +62,11 @@ const Contact = () => {
       <hr className="featurette-divider" />
       <div>
         <Form
-          action="https://formspree.io/f/mwkazejb"
-          method="POST"
+          // action="mailto:rmmccar92@gmail.com"
+          // method="POST"
           id="contactForm"
           ref={formRef}
+          onSubmit={handleFormSubmit}
         >
           <Form.Group>
             <Form.Label htmlFor="name">Name</Form.Label>
@@ -93,7 +108,7 @@ const Contact = () => {
           <div className="d-grid">
             <button
               id="btn-primary"
-              onClick={handleFormSubmit}
+              // onClick={handleFormSubmit}
               className="btn-light btn mt-1"
               type="submit"
               name="action"
