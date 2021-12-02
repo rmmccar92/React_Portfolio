@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import resume from "../../images/McCarthy Resume.docx.pdf";
+import resume from "../../images/Resume_3.pdf";
 import mongoImg from "../../images/technologies/mongo.png";
 import { gsap } from "gsap";
 

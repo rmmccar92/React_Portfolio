@@ -50,6 +50,13 @@ function DrawerComponent() {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
+              <Link className={classes.link} to="/projects">
+                Projects
+              </Link>
+            </ListItemText>
+          </ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
               <Link className={classes.link} to="/about">
                 About
               </Link>
@@ -57,11 +64,12 @@ function DrawerComponent() {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link className={classes.link} to="/projects">
-                Projects
+              <Link className={classes.link} to="/resume">
+                Resume
               </Link>
             </ListItemText>
           </ListItem>
+
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link className={classes.link} to="/contact">
