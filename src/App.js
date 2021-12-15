@@ -8,7 +8,7 @@ import About from "./components/pages/About";
 import Home from "./components/pages/Home";
 import Resume from "./components/pages/Resume";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { PortfolioProvider } from "./utils/GlobalState";
 document.body.style.backgroundColor = "black";
 const App = () => {
