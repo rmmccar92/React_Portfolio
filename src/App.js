@@ -8,7 +8,7 @@ import About from "./components/pages/About";
 import Home from "./components/pages/Home";
 import Resume from "./components/pages/Resume";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { PortfolioProvider } from "./utils/GlobalState";
 document.body.style.backgroundColor = "black";
 const App = () => {
@@ -17,12 +17,10 @@ const App = () => {
   }, []);
   return (
     <>
-      {/* <Navbar currentPage={currentPage} handlePageChange={handlePageChange} /> */}
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <PortfolioProvider>
           <Navbar />
           <Routes>
-            {/* <Route exact path="/React_Portfolio/" element={<Home />} /> */}
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
@@ -31,7 +29,6 @@ const App = () => {
           </Routes>
         </PortfolioProvider>
       </Router>
-      {/* <div>{renderPage()}</div> */}
       <Footer />
     </>
   );
