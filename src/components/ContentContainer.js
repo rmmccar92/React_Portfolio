@@ -1,5 +1,4 @@
 import React from "react";
-// import Nav from "./Nav";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Project from "./pages/Project";
@@ -13,28 +12,6 @@ import { PortfolioProvider } from "../utils/GlobalState";
 document.body.style.backgroundColor = "black";
 
 const ContentContainer = () => {
-  // const [currentPage, setCurrentPage] = useState("Home");
-
-  // const renderPage = () => {
-  //   if (currentPage === "Home") {
-  //     return <Home />;
-  //   }
-  //   if (currentPage === "About") {
-  //     return <About />;
-  //   }
-  //   if (currentPage === "Contact") {
-  //     return <Contact />;
-  //   }
-  //   if (currentPage === "Project") {
-  //     return <Project />;
-  //   }
-  //   if (currentPage === "Resume") {
-  //     return <Resume />;
-  //   }
-  // };
-
-  // const handlePageChange = (page) => setCurrentPage(page);
-
   return (
     <>
       {/* <Navbar currentPage={currentPage} handlePageChange={handlePageChange} /> */}

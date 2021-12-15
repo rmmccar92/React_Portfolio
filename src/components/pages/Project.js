@@ -14,6 +14,7 @@ const Project = () => {
   useEffect(() => {
     gsap.from(q(".row"), { opacity: 0, duration: 1, x: -100 });
   });
+
   return (
     <>
       <div className="container" id="work" ref={elRef}>
